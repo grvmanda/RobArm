@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot name="robarm" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find robarm_description)/urdf/materials.xacro" />
+
   <!-- Transmission macro -->
   <xacro:macro name="SimpleTransmission" params="joint n">
     <transmission name="tran${n}">
@@ -34,6 +37,7 @@
       <geometry>
         <box size="0.4 0.4 0.2"/>
       </geometry>
+      <material name="black"/>
     </visual>
 
     <collision>
@@ -68,7 +72,46 @@
   <!--  Link 2 -->
   <link name="link2">
     <visual>
-      <origin xyz="0 0 0.2" rpy="0 0 0"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.6"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0.6" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.1" length="0.6"/>
+      </geometry>
+    </collision>
+
+   <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0"
+               iyy="0.1" iyz="0.0"
+               izz="0.1" />
+    </inertial>
+
+  </link>
+
+  <!-- Joint 2 -->
+  <joint name="joint2" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0.0 0.0 0.6" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit velocity="4.8" effort="1" lower="${-pi*0.9}" upper="${pi*0.9}" />
+  </joint>
+
+  <!-- Transmission 2 -->
+  <xacro:SimpleTransmission n="2" joint="joint2" />
+
+  <!--  Link 3 -->
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
       <geometry>
         <box size="0.1 0.1 0.6"/>
       </geometry>
@@ -78,7 +121,46 @@
     <collision>
       <origin xyz="0 0 0.6" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.1" length="1"/>
+        <cylinder radius="0.1" length="0.6"/>
+      </geometry>
+    </collision>
+
+   <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0"
+               iyy="0.1" iyz="0.0"
+               izz="0.1" />
+    </inertial>
+
+  </link>
+
+  <!-- Joint 3 -->
+  <joint name="joint3" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0.0 0.0 0.6" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit velocity="4.8" effort="1" lower="${-pi*0.9}" upper="${pi*0.9}" />
+  </joint>
+
+  <!-- Transmission 3 -->
+  <xacro:SimpleTransmission n="3" joint="joint3" />
+
+  <!--  Link 4 -->
+  <link name="link4">
+    <visual>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.6"/>
+      </geometry>
+      <material name="brown"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0.6" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.1" length="0.6"/>
       </geometry>
     </collision>
 
