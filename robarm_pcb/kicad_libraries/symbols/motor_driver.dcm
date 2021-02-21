@@ -1,3 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP DRV8886PWPR‎
+F https://www.ti.com/lit/ds/symlink/drv8886.pdf?ts=1612908505620&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV8886%253FCMP%253Dconv-poasamples
+$ENDCMP
+#
+$CMP PCA9685PW
+F https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf
+$ENDCMP
+#
+$CMP TCA9539
+F https://www.ti.com/lit/ds/symlink/tca9539.pdf?ts=1613645032993&ref_url=https%253A%252F%252Fwww.google.com%252F
+$ENDCMP
+#
+$CMP TCA9539PWR
+F https://www.ti.com/lit/ds/symlink/tca9539.pdf?ts=1613645032993&ref_url=https%253A%252F%252Fwww.google.com%252F
+$ENDCMP
+#
 #End Doc Library
