@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name motor_driver)(type Legacy)(uri F:/prj/RobArm/robarm_pcb/kicad_libraries/symbols/motor_driver.lib)(options "")(descr ""))
+  (lib (name LD1117DT33TR)(type Legacy)(uri F:/prj/RobArm/robarm_pcb/kicad_libraries/symbols/LD1117DT33TR.lib)(options "")(descr ""))
 )

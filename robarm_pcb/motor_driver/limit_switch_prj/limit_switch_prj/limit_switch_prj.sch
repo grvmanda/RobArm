@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L motor_driver:EE-SX1071 U1
+U 1 1 605C5089
+P 5550 3750
+F 0 "U1" H 5978 3846 50  0000 L CNN
+F 1 "EE-SX1071" H 5978 3755 50  0000 L CNN
+F 2 "motor_driver:EE-SX1071" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 605C600F
+P 4700 3500
+F 0 "R1" H 4768 3546 50  0000 L CNN
+F 1 "10k" H 4750 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4700 3500 50  0001 C CNN
+F 3 "~" H 4700 3500 50  0001 C CNN
+	1    4700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 605C6F9E
+P 5850 4250
+F 0 "R2" H 5918 4296 50  0000 L CNN
+F 1 "10k" H 5918 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5850 4250 50  0001 C CNN
+F 3 "~" H 5850 4250 50  0001 C CNN
+	1    5850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 605C83EE
+P 4700 3750
+F 0 "#PWR0101" H 4700 3500 50  0001 C CNN
+F 1 "GND" H 4705 3577 50  0000 C CNN
+F 2 "" H 4700 3750 50  0001 C CNN
+F 3 "" H 4700 3750 50  0001 C CNN
+	1    4700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 605C8856
+P 5850 4500
+F 0 "#PWR0102" H 5850 4250 50  0001 C CNN
+F 1 "GND" H 5855 4327 50  0000 C CNN
+F 2 "" H 5850 4500 50  0001 C CNN
+F 3 "" H 5850 4500 50  0001 C CNN
+	1    5850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3600 4700 3750
+Wire Wire Line
+	4700 3200 4700 3400
+Wire Wire Line
+	5850 4350 5850 4400
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 605D0BD4
+P 6550 2800
+F 0 "J1" H 6630 2842 50  0000 L CNN
+F 1 "Conn_01x03" H 6630 2751 50  0000 L CNN
+F 2 "motor_driver:picoblade-conn-1.25mm-3pin" H 6550 2800 50  0001 C CNN
+F 3 "~" H 6550 2800 50  0001 C CNN
+	1    6550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2700 5850 2700
+Wire Wire Line
+	5100 2700 5100 4150
+Wire Wire Line
+	5100 4150 5300 4150
+Wire Wire Line
+	5300 4150 5300 3950
+Wire Wire Line
+	4700 3200 5300 3200
+Wire Wire Line
+	5300 3200 5300 3450
+Wire Wire Line
+	5850 2700 5850 3450
+Connection ~ 5850 2700
+Wire Wire Line
+	5850 2700 5100 2700
+Wire Wire Line
+	5850 3950 5850 4000
+Wire Wire Line
+	5850 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 2800
+Wire Wire Line
+	6150 2800 6350 2800
+Connection ~ 5850 4000
+Wire Wire Line
+	5850 4000 5850 4150
+Wire Wire Line
+	6350 2900 6350 4400
+Wire Wire Line
+	6350 4400 5850 4400
+Connection ~ 5850 4400
+Wire Wire Line
+	5850 4400 5850 4500
+$EndSCHEMATC
