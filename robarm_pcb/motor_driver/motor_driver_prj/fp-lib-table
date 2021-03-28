@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name motor_driver)(type KiCad)(uri F:/prj/RobArm/robarm_pcb/kicad_libraries/footprints/motor_driver.pretty)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri F:/prj/RobArm/robarm_pcb/kicad_libraries/external/KiCAD/2021-02-21_23-30-36/footprints.pretty)(options "")(descr ""))
+  (lib (name more)(type KiCad)(uri F:/prj/RobArm/robarm_pcb/kicad_libraries/footprints/LD1117DT33TR.pretty)(options "")(descr ""))
 )

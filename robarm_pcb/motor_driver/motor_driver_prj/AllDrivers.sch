@@ -14,24 +14,24 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4650 6050 850  1200
+S 4650 6000 850  1200
 U 6036596C
 F0 "Motor4" 50
 F1 "single_driver.sch" 50
-F2 "RRef" I L 4650 7150 50 
-F3 "DECAY" I L 4650 6200 50 
-F4 "TRQ" I L 4650 6300 50 
-F5 "M1" I L 4650 6400 50 
-F6 "M0" I L 4650 6500 50 
-F7 "DIR" I L 4650 6600 50 
-F8 "STEP" I L 4650 7050 50 
-F9 "ENABLE" I L 4650 6700 50 
-F10 "~SLEEP" I L 4650 6800 50 
-F11 "A1" O R 5500 6400 50 
-F12 "A2" O R 5500 6500 50 
-F13 "B2" O R 5500 6700 50 
-F14 "B1" O R 5500 6800 50 
-F15 "~FAULT" I L 4650 6900 50 
+F2 "RRef" I L 4650 7100 50 
+F3 "DECAY" I L 4650 6150 50 
+F4 "TRQ" I L 4650 6250 50 
+F5 "M1" I L 4650 6350 50 
+F6 "M0" I L 4650 6450 50 
+F7 "DIR" I L 4650 6550 50 
+F8 "STEP" I L 4650 7000 50 
+F9 "ENABLE" I L 4650 6650 50 
+F10 "~SLEEP" I L 4650 6750 50 
+F11 "A1" O R 5500 6350 50 
+F12 "A2" O R 5500 6450 50 
+F13 "B2" O R 5500 6650 50 
+F14 "B1" O R 5500 6750 50 
+F15 "~FAULT" I L 4650 6850 50 
 $EndSheet
 $Comp
 L motor_driver:TCA9539PWR U?
@@ -119,54 +119,6 @@ F13 "B2" O R 5500 1750 50
 F14 "B1" O R 5500 1850 50 
 F15 "~FAULT" I L 4650 1950 50 
 $EndSheet
-Wire Wire Line
-	3800 2350 4350 2350
-Wire Wire Line
-	4300 2800 4650 2800
-Wire Wire Line
-	3800 2550 4250 2550
-Wire Wire Line
-	4250 2550 4250 2900
-Wire Wire Line
-	4250 2900 4650 2900
-Wire Wire Line
-	3800 2650 4200 2650
-Wire Wire Line
-	4200 2650 4200 3000
-Wire Wire Line
-	4200 3000 4650 3000
-Wire Wire Line
-	3800 2750 4150 2750
-Wire Wire Line
-	4150 2750 4150 3100
-Wire Wire Line
-	4150 3100 4650 3100
-Wire Wire Line
-	3800 2850 4100 2850
-Wire Wire Line
-	4100 2850 4100 3200
-Wire Wire Line
-	4100 3200 4650 3200
-Wire Wire Line
-	3800 2950 4050 2950
-Wire Wire Line
-	4050 2950 4050 3300
-Wire Wire Line
-	4050 3300 4650 3300
-Wire Wire Line
-	3800 3050 4000 3050
-Wire Wire Line
-	4000 3050 4000 3400
-Wire Wire Line
-	4000 3400 4650 3400
-Wire Wire Line
-	4350 2700 4650 2700
-Wire Wire Line
-	4350 2350 4350 2700
-Wire Wire Line
-	4300 2450 4300 2800
-Wire Wire Line
-	3800 2450 4300 2450
 Wire Wire Line
 	3850 1250 4650 1250
 Wire Wire Line
@@ -272,61 +224,13 @@ Wire Wire Line
 Wire Wire Line
 	4200 5450 4650 5450
 Wire Wire Line
-	3800 5800 4350 5800
-Wire Wire Line
-	4350 5800 4350 6200
-Wire Wire Line
-	4350 6200 4650 6200
-Wire Wire Line
-	3800 5900 4300 5900
-Wire Wire Line
-	4300 5900 4300 6300
-Wire Wire Line
-	4300 6300 4650 6300
-Wire Wire Line
-	3800 6000 4250 6000
-Wire Wire Line
-	4250 6000 4250 6400
-Wire Wire Line
-	4250 6400 4650 6400
-Wire Wire Line
-	4200 6100 4200 6500
-Wire Wire Line
-	4200 6500 4650 6500
-Wire Wire Line
-	3800 6100 4200 6100
-Wire Wire Line
-	3800 6200 4150 6200
-Wire Wire Line
-	4150 6200 4150 6600
-Wire Wire Line
-	4150 6600 4650 6600
-Wire Wire Line
-	3800 6300 4100 6300
-Wire Wire Line
-	4100 6300 4100 6700
-Wire Wire Line
-	4100 6700 4650 6700
-Wire Wire Line
-	3800 6400 4050 6400
-Wire Wire Line
-	4050 6400 4050 6800
-Wire Wire Line
-	4050 6800 4650 6800
-Wire Wire Line
-	3800 6500 4000 6500
-Wire Wire Line
-	4000 6500 4000 6900
-Wire Wire Line
-	4000 6900 4650 6900
-Wire Wire Line
 	4550 5600 4650 5600
 Wire Wire Line
 	4550 5700 4650 5700
 Wire Wire Line
-	4550 7050 4650 7050
+	4550 7000 4650 7000
 Wire Wire Line
-	4550 7150 4650 7150
+	4550 7100 4650 7100
 Text HLabel 4550 2100 0    50   Input ~ 0
 STEP1
 Text HLabel 4550 2200 0    50   Input ~ 0
@@ -339,9 +243,9 @@ Text HLabel 4550 5600 0    50   Input ~ 0
 STEP3
 Text HLabel 4550 5700 0    50   Input ~ 0
 RRef3
-Text HLabel 4550 7050 0    50   Input ~ 0
+Text HLabel 4550 7000 0    50   Input ~ 0
 STEP4
-Text HLabel 4550 7150 0    50   Input ~ 0
+Text HLabel 4550 7100 0    50   Input ~ 0
 RRef4
 $Comp
 L power:VCC #PWR023
@@ -414,54 +318,6 @@ Wire Wire Line
 	9200 3650 9300 3650
 Wire Wire Line
 	9200 3550 9300 3550
-Wire Wire Line
-	8650 3400 9300 3400
-Wire Wire Line
-	8650 3050 8650 3400
-Wire Wire Line
-	8400 3050 8650 3050
-Wire Wire Line
-	8700 3300 9300 3300
-Wire Wire Line
-	8700 2950 8700 3300
-Wire Wire Line
-	8400 2950 8700 2950
-Wire Wire Line
-	8750 3200 9300 3200
-Wire Wire Line
-	8750 2850 8750 3200
-Wire Wire Line
-	8400 2850 8750 2850
-Wire Wire Line
-	8800 3100 9300 3100
-Wire Wire Line
-	8800 2750 8800 3100
-Wire Wire Line
-	8400 2750 8800 2750
-Wire Wire Line
-	8850 3000 9300 3000
-Wire Wire Line
-	8850 2650 8850 3000
-Wire Wire Line
-	8400 2650 8850 2650
-Wire Wire Line
-	8900 2900 9300 2900
-Wire Wire Line
-	8900 2550 8900 2900
-Wire Wire Line
-	8400 2550 8900 2550
-Wire Wire Line
-	8950 2800 9300 2800
-Wire Wire Line
-	8950 2450 8950 2800
-Wire Wire Line
-	8400 2450 8950 2450
-Wire Wire Line
-	9000 2700 9300 2700
-Wire Wire Line
-	9000 2350 9000 2700
-Wire Wire Line
-	8400 2350 9000 2350
 Wire Wire Line
 	9200 2200 9300 2200
 Wire Wire Line
@@ -1006,13 +862,13 @@ Text HLabel 5650 5250 2    50   Output ~ 0
 MOTOR3_B2
 Text HLabel 5650 5350 2    50   Output ~ 0
 MOTOR3_B1
-Text HLabel 5650 6400 2    50   Output ~ 0
+Text HLabel 5650 6350 2    50   Output ~ 0
 MOTOR4_A1
-Text HLabel 5650 6500 2    50   Output ~ 0
+Text HLabel 5650 6450 2    50   Output ~ 0
 MOTOR4_A2
-Text HLabel 5650 6700 2    50   Output ~ 0
+Text HLabel 5650 6650 2    50   Output ~ 0
 MOTOR4_B2
-Text HLabel 5650 6800 2    50   Output ~ 0
+Text HLabel 5650 6750 2    50   Output ~ 0
 MOTOR4_B1
 Text HLabel 10300 1450 2    50   Output ~ 0
 MOTOR5_A1
@@ -1071,11 +927,155 @@ Wire Wire Line
 Wire Wire Line
 	5500 5350 5650 5350
 Wire Wire Line
-	5500 6400 5650 6400
+	5500 6350 5650 6350
 Wire Wire Line
-	5500 6500 5650 6500
+	5500 6450 5650 6450
 Wire Wire Line
-	5500 6700 5650 6700
+	5500 6650 5650 6650
 Wire Wire Line
-	5500 6800 5650 6800
+	5500 6750 5650 6750
+Wire Wire Line
+	3800 2550 4500 2550
+Wire Wire Line
+	4500 2550 4500 2700
+Wire Wire Line
+	4500 2700 4650 2700
+Wire Wire Line
+	3800 2650 4450 2650
+Wire Wire Line
+	4450 2650 4450 2800
+Wire Wire Line
+	4450 2800 4650 2800
+Wire Wire Line
+	4400 2750 4400 2900
+Wire Wire Line
+	4400 2900 4650 2900
+Wire Wire Line
+	3800 2750 4400 2750
+Wire Wire Line
+	3800 2850 4350 2850
+Wire Wire Line
+	4350 2850 4350 3000
+Wire Wire Line
+	4350 3000 4650 3000
+Wire Wire Line
+	3800 2950 4300 2950
+Wire Wire Line
+	4300 2950 4300 3100
+Wire Wire Line
+	4300 3100 4650 3100
+Wire Wire Line
+	3800 3050 4250 3050
+Wire Wire Line
+	4250 3050 4250 3200
+Wire Wire Line
+	4250 3200 4650 3200
+Wire Wire Line
+	3800 3150 4200 3150
+Wire Wire Line
+	4200 3150 4200 3300
+Wire Wire Line
+	4200 3300 4650 3300
+Wire Wire Line
+	3800 3250 4150 3250
+Wire Wire Line
+	4150 3250 4150 3400
+Wire Wire Line
+	4150 3400 4650 3400
+Wire Wire Line
+	3800 6000 4500 6000
+Wire Wire Line
+	4500 6000 4500 6150
+Wire Wire Line
+	4500 6150 4650 6150
+Wire Wire Line
+	3800 6100 4450 6100
+Wire Wire Line
+	4450 6100 4450 6250
+Wire Wire Line
+	4450 6250 4650 6250
+Wire Wire Line
+	4400 6200 4400 6350
+Wire Wire Line
+	4400 6350 4650 6350
+Wire Wire Line
+	3800 6200 4400 6200
+Wire Wire Line
+	3800 6300 4350 6300
+Wire Wire Line
+	4350 6300 4350 6450
+Wire Wire Line
+	4350 6450 4650 6450
+Wire Wire Line
+	3800 6400 4300 6400
+Wire Wire Line
+	4300 6400 4300 6550
+Wire Wire Line
+	4300 6550 4650 6550
+Wire Wire Line
+	3800 6500 4250 6500
+Wire Wire Line
+	4250 6500 4250 6650
+Wire Wire Line
+	4250 6650 4650 6650
+Wire Wire Line
+	3800 6600 4200 6600
+Wire Wire Line
+	4200 6600 4200 6750
+Wire Wire Line
+	4200 6750 4650 6750
+Wire Wire Line
+	3800 6700 4150 6700
+Wire Wire Line
+	4150 6700 4150 6850
+Wire Wire Line
+	4150 6850 4650 6850
+Wire Wire Line
+	8400 2550 9100 2550
+Wire Wire Line
+	9100 2550 9100 2700
+Wire Wire Line
+	8400 2650 9050 2650
+Wire Wire Line
+	9050 2650 9050 2800
+Wire Wire Line
+	9000 2750 9000 2900
+Wire Wire Line
+	8400 2750 9000 2750
+Wire Wire Line
+	8400 2850 8950 2850
+Wire Wire Line
+	8950 2850 8950 3000
+Wire Wire Line
+	8400 2950 8900 2950
+Wire Wire Line
+	8900 2950 8900 3100
+Wire Wire Line
+	8400 3050 8850 3050
+Wire Wire Line
+	8850 3050 8850 3200
+Wire Wire Line
+	8400 3150 8800 3150
+Wire Wire Line
+	8800 3150 8800 3300
+Wire Wire Line
+	8400 3250 8750 3250
+Wire Wire Line
+	8750 3250 8750 3400
+Wire Wire Line
+	9100 2700 9300 2700
+Wire Wire Line
+	9050 2800 9300 2800
+Wire Wire Line
+	9000 2900 9300 2900
+Wire Wire Line
+	8950 3000 9300 3000
+Wire Wire Line
+	8900 3100 9300 3100
+Wire Wire Line
+	8850 3200 9300 3200
+Wire Wire Line
+	8800 3300 9300 3300
+Wire Wire Line
+	8750 3400 9300 3400
 $EndSCHEMATC
