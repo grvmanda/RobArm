@@ -209,10 +209,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 2750 3000 2750
 Wire Wire Line
-	3000 1950 3000 2750
+	3000 1950 3000 2250
 Connection ~ 3000 2750
 Wire Wire Line
-	3000 2750 3000 3450
+	3000 2750 3000 2850
 $Comp
 L power:GND #PWR022
 U 1 1 60375C25
@@ -229,27 +229,27 @@ Wire Wire Line
 Wire Wire Line
 	3750 1750 3950 1750
 Wire Wire Line
-	3950 1750 3950 2150
+	3950 1750 3950 1850
 Wire Wire Line
 	3750 2150 3950 2150
 Connection ~ 3950 2150
 Wire Wire Line
-	3950 2150 3950 2450
+	3950 2150 3950 2250
 Wire Wire Line
 	3750 2450 3950 2450
 Connection ~ 3950 2450
 Wire Wire Line
-	3950 2450 3950 2950
+	3950 2450 3950 2550
 Wire Wire Line
 	3750 2950 3950 2950
 Connection ~ 3950 2950
 Wire Wire Line
-	3950 2950 3950 3150
+	3950 2950 3950 3050
 Wire Wire Line
 	3750 3150 3950 3150
 Connection ~ 3950 3150
 Wire Wire Line
-	3950 3150 3950 3700
+	3950 3150 3950 3250
 Text HLabel 2850 1650 0    50   Input ~ 0
 I2C_SDA
 Text HLabel 2850 1750 0    50   Input ~ 0
@@ -492,4 +492,178 @@ F 3 "" H 2550 6100 50  0001 C CNN
 	1    2550 6100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3250 1550 3000 1550
+Wire Wire Line
+	3000 1550 3000 1850
+Connection ~ 3000 1950
+Wire Wire Line
+	3250 1850 3000 1850
+Connection ~ 3000 1850
+Wire Wire Line
+	3000 1850 3000 1950
+Wire Wire Line
+	3250 2250 3000 2250
+Connection ~ 3000 2250
+Wire Wire Line
+	3000 2250 3000 2350
+Wire Wire Line
+	3250 2350 3000 2350
+Connection ~ 3000 2350
+Wire Wire Line
+	3000 2350 3000 2650
+Wire Wire Line
+	3250 2650 3000 2650
+Connection ~ 3000 2650
+Wire Wire Line
+	3000 2650 3000 2750
+Wire Wire Line
+	3250 2850 3000 2850
+Connection ~ 3000 2850
+Wire Wire Line
+	3000 2850 3000 3150
+Wire Wire Line
+	3250 3150 3000 3150
+Connection ~ 3000 3150
+Wire Wire Line
+	3000 3150 3000 3250
+Wire Wire Line
+	3250 3250 3000 3250
+Connection ~ 3000 3250
+Wire Wire Line
+	3000 3250 3000 3350
+Wire Wire Line
+	3250 3350 3000 3350
+Connection ~ 3000 3350
+Wire Wire Line
+	3000 3350 3000 3450
+Wire Wire Line
+	3750 3450 3950 3450
+Connection ~ 3950 3450
+Wire Wire Line
+	3950 3450 3950 3700
+Wire Wire Line
+	3750 3350 3950 3350
+Connection ~ 3950 3350
+Wire Wire Line
+	3950 3350 3950 3450
+Wire Wire Line
+	3750 3250 3950 3250
+Connection ~ 3950 3250
+Wire Wire Line
+	3950 3250 3950 3350
+Wire Wire Line
+	3750 3050 3950 3050
+Connection ~ 3950 3050
+Wire Wire Line
+	3950 3050 3950 3150
+Wire Wire Line
+	3750 2850 3950 2850
+Connection ~ 3950 2850
+Wire Wire Line
+	3950 2850 3950 2950
+Wire Wire Line
+	3750 2750 3950 2750
+Connection ~ 3950 2750
+Wire Wire Line
+	3950 2750 3950 2850
+Wire Wire Line
+	3750 2650 3950 2650
+Connection ~ 3950 2650
+Wire Wire Line
+	3950 2650 3950 2750
+Wire Wire Line
+	3750 2550 3950 2550
+Connection ~ 3950 2550
+Wire Wire Line
+	3950 2550 3950 2650
+Wire Wire Line
+	3750 2350 3950 2350
+Connection ~ 3950 2350
+Wire Wire Line
+	3950 2350 3950 2450
+Wire Wire Line
+	3750 2250 3950 2250
+Connection ~ 3950 2250
+Wire Wire Line
+	3950 2250 3950 2350
+Wire Wire Line
+	3750 2050 3950 2050
+Connection ~ 3950 2050
+Wire Wire Line
+	3950 2050 3950 2150
+Wire Wire Line
+	3750 1950 3950 1950
+Connection ~ 3950 1950
+Wire Wire Line
+	3950 1950 3950 2050
+Wire Wire Line
+	3750 1850 3950 1850
+Connection ~ 3950 1850
+Wire Wire Line
+	3950 1850 3950 1950
+Wire Wire Line
+	3750 1650 3950 1650
+Wire Wire Line
+	3950 1650 3950 1750
+Connection ~ 3950 1750
+Wire Wire Line
+	3750 1550 3950 1550
+Wire Wire Line
+	3950 1550 3950 1650
+Connection ~ 3950 1650
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6092C97D
+P 5900 5050
+F 0 "H1" H 6000 5096 50  0000 L CNN
+F 1 "MountingHole" H 6000 5005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5900 5050 50  0001 C CNN
+F 3 "~" H 5900 5050 50  0001 C CNN
+	1    5900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6092D5B7
+P 5900 5350
+F 0 "H2" H 6000 5396 50  0000 L CNN
+F 1 "MountingHole" H 6000 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5900 5350 50  0001 C CNN
+F 3 "~" H 5900 5350 50  0001 C CNN
+	1    5900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6092DCE4
+P 5900 5650
+F 0 "H3" H 6000 5696 50  0000 L CNN
+F 1 "MountingHole" H 6000 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5900 5650 50  0001 C CNN
+F 3 "~" H 5900 5650 50  0001 C CNN
+	1    5900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6092EF37
+P 5900 5950
+F 0 "H4" H 6000 5996 50  0000 L CNN
+F 1 "MountingHole" H 6000 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5900 5950 50  0001 C CNN
+F 3 "~" H 5900 5950 50  0001 C CNN
+	1    5900 5950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5550 6300 6750 6300
+Wire Notes Line
+	6750 6300 6750 4500
+Wire Notes Line
+	6750 4500 5550 4500
+Wire Notes Line
+	5550 4500 5550 6300
+Text Notes 5800 4700 0    50   ~ 0
+Mounting Holes
 $EndSCHEMATC

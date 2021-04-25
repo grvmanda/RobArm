@@ -1,0 +1,65 @@
+
+*.gcode
+*.kicad_pcb-bak
+*.f3d
+robarm_cad/Assembly/asm_robArm.FCStd
+robarm_cad/Assembly/top-cap.stl
+robarm_cad/Base/rpi body.stl
+robarm_cad/Base/shaft-coupler.stl
+robarm_cad/Base/shaft-coupler_v2.stl
+robarm_cad/Base/shaft-coupler_v3.stl
+robarm_cad/Base/top-cap.stl
+robarm_cad/default_profile.curaprofile
+robarm_cad/fusion360community-imports/credits.txt
+robarm_cad/imports/D2FS_F_N_A_STEP.zip
+robarm_cad/imports/D2FS_F_N_A_STEP/D2FS_F_N_A.step
+robarm_cad/nema17-gearbox/asm_nema17_gearbox.FCStd
+robarm_cad/nema17-gearbox/Carrier v2.stl
+robarm_cad/nema17-gearbox/Carrier v3.stl
+robarm_cad/nema17-gearbox/Carrier v4.stl
+robarm_cad/nema17-gearbox/Carrier.stl
+robarm_cad/nema17-gearbox/carrier/1.stl
+robarm_cad/nema17-gearbox/carrier/2.stl
+robarm_cad/nema17-gearbox/carrier/3.stl
+robarm_cad/nema17-gearbox/carrier/bot.stl
+robarm_cad/nema17-gearbox/carrier/mid.stl
+robarm_cad/nema17-gearbox/carrier/top.stl
+robarm_cad/nema17-gearbox/Cover v2.stl
+robarm_cad/nema17-gearbox/Cover.stl
+robarm_cad/nema17-gearbox/lib/nm17GB_carrier.FCStd
+robarm_cad/nema17-gearbox/lib/nm17GB_planet_gear.FCStd
+robarm_cad/nema17-gearbox/lib/nm17GB_ring.FCStd
+robarm_cad/nema17-gearbox/lib/nm17GB_sun_gear.FCStd
+robarm_cad/nema17-gearbox/nema17-gearbox v9.stl
+robarm_cad/nema17-gearbox/planet (24 teeth) v2.stl
+robarm_cad/nema17-gearbox/planet (24 teeth).stl
+robarm_cad/nema17-gearbox/ring wall v2.stl
+robarm_cad/nema17-gearbox/Spur Gear (16 teeth) v2.stl
+robarm_cad/nema17-gearbox/Spur Gear (16 teeth).stl
+robarm_cad/nema17-gearbox/Spur Gear (24 teeth) v2.stl
+robarm_cad/nema17-gearbox/sun (16 teeth).stl
+robarm_cad/nema17/first_draft.stl
+robarm_cad/nema17/spur_gear.FCStd
+robarm_cad/nema17/spur_gear.FCStd1
+robarm_cad/nema17/third_draft.stl
+profile.xml.fdm_material
+robarm_cad/nema17/spur_gear.FCStd
+robarm_documents/good reads/Joints-of-KUKA-KR-16KS-robotic-arm.png
+robarm_documents/New OpenDocument Text.odt
+*.sch-bak
+*.bck
+robarm_pcb2/driver/driver.l#1
+robarm_pcb2/driver/driver.l#2
+robarm_pcb2/driver/driver.l#3
+robarm_pcb2/driver/driver.lbr
+robarm_pcb2/libraries/motor_driver.dcm
+robarm_pcb2/libraries/motor_driver.lib
+robarm_pcb2/libraries/motor_driver_board.pretty/DRV8886_24HTSSOP.kicad_mod
+robarm_pcb2/motor_drivers/motor_driver_board/fp-info-cache
+robarm_pcb2/motor_drivers/motor_driver_board/fp-lib-table
+robarm_pcb2/motor_drivers/motor_driver_board/motor_driver_board-cache.lib
+robarm_pcb2/motor_drivers/motor_driver_board/motor_driver_board.kicad_pcb
+robarm_pcb2/motor_drivers/motor_driver_board/motor_driver_board.net
+robarm_pcb2/motor_drivers/motor_driver_board/motor_driver_board.pro
+robarm_pcb2/motor_drivers/motor_driver_board/motor_driver_board.sch
+robarm_pcb2/motor_drivers/motor_driver_board/sym-lib-table
