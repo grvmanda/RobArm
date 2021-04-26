@@ -2,7 +2,7 @@
 
 potential 6 DOF (maybe lower) 3D printed robotic arm. 
 
-The repo is very rudimentary at the moment (CAD stored on Fusion 360's cloud); the code is be based on ROS melodic.
+The repo is very rudimentary at the moment (CAD stored on Fusion 360's cloud); the code is based on ROS melodic.
 The target platform is RPi4.
 
 Custom stepper motor driver board (and boards for limit switches) designed on KiCad is also stored on this repo.
