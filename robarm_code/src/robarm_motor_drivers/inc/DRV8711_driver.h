@@ -24,11 +24,12 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include <fcntl.h>
-#include <sys/ioctl.h>
+// #include <sys/ioctl.h>
 #include <iostream>
 
 
 extern "C" {
+#include <sys/ioctl.h>
     #include <linux/types.h>
     #include <linux/spi/spidev.h>
 }
@@ -36,10 +37,12 @@ extern "C" {
 
 
 #define _CONFIG_SPI_BITS_PER_WORD           16
-#define _CONFIG_SPI_BAUD_RATE               16
+#define _CONFIG_SPI_BAUD_RATE               500000
 
+#define _SPI_LOOPBACK_ON                    1
+#define _SPI_LOOPBACK_OFF                   0
 
-enum DRV8711_status;
+// enum DRV8711_status;
 
 enum ErrorCodes_Type
 {
@@ -47,7 +50,10 @@ enum ErrorCodes_Type
   _SPI_INIT_FAIL_OPENDEV,
   _SPI_INIT_FAIL_MODE,
   _SPI_INIT_FAIL_BITS_PER_WORD,
-  _SPI_INIT_FAIL_BAUD_RATE
+  _SPI_INIT_FAIL_BAUD_RATE,
+  _SPI_READ_FAIL,
+  _SPI_WRITE_FAIL,
+  _SPI_TRANSFER_FAIL
 };
 
 
@@ -62,18 +68,26 @@ class DRV8711_driver {
         int _devId;
         int _drvStatus;
         int _spiFd;
+        __u8 _spiChannel;
+        __u8 _spiMode;
+        __u8 _spiBitsPerWord;
+        __u32 _spiBaudRate;
 
+        
         auto _readByte(__s32 *data, __u8 addr) -> ErrorCodes_Type;
-        auto _SPI_init(__u32 spiChannel, __u32 spiBaudRate) -> ErrorCodes_Type;
-        int _SPI_read();
+        auto _SPI_init() -> ErrorCodes_Type;
+        auto _SPI_read(__u8 *rxBuf, __u32 rxBufCount) -> ErrorCodes_Type;
+        auto _SPI_write(__u8 *txBuf, __u32 txBufCount) -> ErrorCodes_Type;
+        auto _SPI_transfer(__u8 *rxBuf, __u8 *txBuf, __u32 bufCount) -> ErrorCodes_Type;
 
     public:        
         
-        DRV8711_driver(__u32 spiChannel, __u32 spiBaudRate);
-        int reInit();
-        int status();
+        DRV8711_driver(__u32 spiChannel, __u8 spiMode, __u32 spiBaudRate, __u8 spiBitsPerWord);
+        ~DRV8711_driver();
 
-        auto readStatus() -> DRV8711_status; 
+        auto setSpeed(__u8 speed) -> ErrorCodes_Type;
+
+        
 
 };
 
